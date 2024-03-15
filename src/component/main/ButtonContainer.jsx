@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import AddNewTeam from "./AddNewTeam";
 
 const ButtonBox = styled.section`
   width: 100%;
@@ -42,7 +43,7 @@ const ButtonContainer = () => {
         <AddCloudBtn>구름 바로 등록하기</AddCloudBtn>
         <AddTeamBtn onClick={IsTeamButtonClick}>팀 새로 만들기</AddTeamBtn>
       </ButtonBox>
-      {TeamClick && <div></div>}
+      {TeamClick && <AddNewTeam />}
     </>
   );
 };
